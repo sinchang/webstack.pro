@@ -9,8 +9,6 @@ import { useEffect, useState } from 'react'
 
 import styles from '../styles/home.module.css'
 
-console.log(shuffle(stacks))
-
 const Home: NextPage = () => {
   const [selectedCategory, setSelectedCategory] =
     useState<CategoryValue | null>(null)
@@ -27,12 +25,12 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     if (!selectedCategory) {
-      setSelectedStacks(stacks)
+      setSelectedStacks(shuffle(stacks))
       return
     }
-    console.log(selectedCategory)
+
     setSelectedStacks(
-      stacks.filter((stack) => stack.category === selectedCategory)
+      shuffle(stacks).filter((stack) => stack.category === selectedCategory)
     )
   }, [selectedCategory])
 
