@@ -20,6 +20,18 @@
     "incremental": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+       "@data/*": [
+        "data/*"
+      ],
+      "@custypes/*": [
+        "types/*"
+      ],
+    }
   },
   "include": [
     "next-env.d.ts",
