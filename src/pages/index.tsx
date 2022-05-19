@@ -56,7 +56,7 @@ const Home: NextPage = () => {
                 image={`/logos/${stack.image}`}
                 name={stack.name}
                 description={stack.description}
-                repo={stack.repo}
+                url={stack.url}
               />
             </div>
           ))}

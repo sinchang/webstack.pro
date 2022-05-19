@@ -7,18 +7,16 @@ interface CardProps {
   image: string
   name: string
   description: string
-  repo: string
+  url: string
 }
 
-export const Card = ({ image, name, description, repo }: CardProps) => {
-  const githubUrl = `https://github.com/${repo}`
-
+export const Card = ({ image, name, description, url }: CardProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.meta}>
         <Image src={image} alt={name} width={32} height={32} />
         <h3 className={styles.name}>{name}</h3>
-        <a href={githubUrl}>
+        <a href={url}>
           <ExternalLinkIcon width={24} />
         </a>
       </div>
