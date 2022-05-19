@@ -31,4 +31,5 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   display: table-cell;
+  font-size: .9rem;
 }
