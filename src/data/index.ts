@@ -1,5 +1,6 @@
 import { DeploymentStacks } from './deployment'
 import { DocumentationStacks } from './documentation'
+import { FormStacks } from './form'
 import { HeadlessComponentStacks } from './headless-component'
 import { MonorepoStacks } from './monorepo'
 import { TestingStacks } from './testing'
@@ -12,4 +13,5 @@ export const stacks = [
   ...DeploymentStacks,
   ...UIComponentStacks,
   ...TestingStacks,
+  ...FormStacks,
 ]
