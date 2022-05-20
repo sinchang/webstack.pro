@@ -4,6 +4,7 @@ export const category = {
   Documentation: 'Documentation',
   Deployment: 'Deployment',
   Monorepo: 'Monorepo',
+  Testing: 'Testing',
 } as const
 
 export type CategoryKey = keyof typeof category

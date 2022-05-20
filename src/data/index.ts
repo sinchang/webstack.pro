@@ -2,6 +2,7 @@ import { DeploymentStacks } from './deployment'
 import { DocumentationStacks } from './documentation'
 import { HeadlessComponentStacks } from './headless-component'
 import { MonorepoStacks } from './monorepo'
+import { TestingStacks } from './testing'
 import { UIComponentStacks } from './ui-component'
 
 export const stacks = [
@@ -10,4 +11,5 @@ export const stacks = [
   ...MonorepoStacks,
   ...DeploymentStacks,
   ...UIComponentStacks,
+  ...TestingStacks,
 ]
