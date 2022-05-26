@@ -41,7 +41,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Webstack.Pro</h1>
-      <h3 className={styles.desc}>The index page for web developers</h3>
+      <h3 className={styles.desc}>Discover the brilliant open-source web tech stacks</h3>
       <div className={styles.main}>
         <div className={styles.categories_wrapper}>
           <Categories

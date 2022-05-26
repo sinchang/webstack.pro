@@ -10,14 +10,16 @@ export default function App(props: AppProps) {
   return (
     <>
       <Head>
-        <title>Webstack.Pro - the index page for web developers</title>
+        <title>
+          Webstack.Pro -Discover the brilliant open-source web tech stacks
+        </title>
         <meta
           name='viewport'
           content='minimum-scale=1, initial-scale=1, width=device-width'
         />
         <meta
           name='description'
-          content='Discover the best fittest web tech stacks for your project'
+          content='Discover the brilliant open-source web tech stacks'
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
