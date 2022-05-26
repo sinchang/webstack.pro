@@ -14,7 +14,7 @@ export const Card = ({ image, name, description, url }: CardProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.meta}>
-        <Image src={image} alt={name} width={32} height={32} />
+        {image ? <Image src={image} alt={name} width={32} height={32} /> : null}
         <h3 className={styles.name}>{name}</h3>
         <a href={url}>
           <ExternalLinkIcon width={24} />

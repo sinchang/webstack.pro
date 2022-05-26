@@ -41,7 +41,9 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Webstack.Pro</h1>
-      <h3 className={styles.desc}>Discover the brilliant open-source web tech stacks</h3>
+      <h3 className={styles.desc}>
+        Discover the brilliant open-source web tech stacks
+      </h3>
       <div className={styles.main}>
         <div className={styles.categories_wrapper}>
           <Categories
@@ -53,7 +55,7 @@ const Home: NextPage = () => {
           {selectedStacks.map((stack) => (
             <div key={stack.name} className={styles.card}>
               <Card
-                image={`/logos/${stack.image}`}
+                image={stack.image ? `/logos/${stack.image}` : ''}
                 name={stack.name}
                 description={stack.description}
                 url={stack.url}

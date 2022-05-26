@@ -1,3 +1,4 @@
+import { BundlerStacks } from './bundler'
 import { DeploymentStacks } from './deployment'
 import { DocumentationStacks } from './documentation'
 import { FormStacks } from './form'
@@ -14,4 +15,5 @@ export const stacks = [
   ...UIComponentStacks,
   ...TestingStacks,
   ...FormStacks,
+  ...BundlerStacks,
 ]
