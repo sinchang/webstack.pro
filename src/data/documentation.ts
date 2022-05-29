@@ -12,14 +12,6 @@ export const DocumentationStacks: Stack[] = [
   },
   {
     category: category.Documentation,
-    url: 'https://www.docz.site',
-    repo: 'doczjs/docz',
-    description: "It's never been easier to document your things!",
-    name: 'Docz',
-    image: 'docz.svg',
-  },
-  {
-    category: category.Documentation,
     url: 'https://docsify.js.org',
     repo: 'docsifyjs/docsify',
     description: 'A magical documentation site generator.',

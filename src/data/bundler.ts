@@ -26,6 +26,22 @@ export const BundlerStacks: Stack[] = [
     description:
       'Bundle your TypeScript library with no config, powered by esbuild.',
     name: 'tsup',
-    image: '',
+    image: 'js.png',
+  },
+  {
+    category: category.Bundler,
+    url: 'https://vitejs.dev',
+    repo: 'vitejs/vite',
+    description: 'Next Generation Frontend Tooling.',
+    name: 'Vite',
+    image: 'vite.svg',
+  },
+  {
+    category: category.Bundler,
+    url: 'https://parceljs.org',
+    repo: 'parcel-bundler/parcel',
+    description: 'A build tool for the rest of us.',
+    name: 'Parcel',
+    image: 'parcel.png',
   },
 ]

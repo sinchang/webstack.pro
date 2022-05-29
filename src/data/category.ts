@@ -6,7 +6,7 @@ export const category = {
   Monorepo: 'Monorepo',
   Testing: 'Testing',
   Form: 'Form',
-  Bundler: 'Bundler'
+  Bundler: 'Bundler',
 } as const
 
 export type CategoryKey = keyof typeof category
