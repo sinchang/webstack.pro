@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const FormStacks: Stack[] = [
   {
-    category: category.Form,
+    category: category.form,
     url: 'https://react-hook-form.com',
     repo: 'react-hook-form/react-hook-form',
     description:

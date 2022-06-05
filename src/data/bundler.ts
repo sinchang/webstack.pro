@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const BundlerStacks: Stack[] = [
   {
-    category: category.Bundler,
+    category: category.bundler,
     url: 'https://rollupjs.org',
     repo: 'rollup/rollup',
     description:
@@ -12,7 +12,7 @@ export const BundlerStacks: Stack[] = [
     image: 'rollupjs.svg',
   },
   {
-    category: category.Bundler,
+    category: category.bundler,
     url: 'https://esbuild.github.io',
     repo: 'evanw/esbuild',
     description: 'An extremely fast JavaScript bundler.',
@@ -20,7 +20,7 @@ export const BundlerStacks: Stack[] = [
     image: 'esbuild.svg',
   },
   {
-    category: category.Bundler,
+    category: category.bundler,
     url: 'https://tsup.egoist.sh',
     repo: 'egoist/tsup',
     description:
@@ -29,7 +29,7 @@ export const BundlerStacks: Stack[] = [
     image: 'js.png',
   },
   {
-    category: category.Bundler,
+    category: category.bundler,
     url: 'https://vitejs.dev',
     repo: 'vitejs/vite',
     description: 'Next Generation Frontend Tooling.',
@@ -37,7 +37,7 @@ export const BundlerStacks: Stack[] = [
     image: 'vite.svg',
   },
   {
-    category: category.Bundler,
+    category: category.bundler,
     url: 'https://parceljs.org',
     repo: 'parcel-bundler/parcel',
     description: 'A build tool for the rest of us.',

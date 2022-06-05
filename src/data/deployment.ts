@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const DeploymentStacks: Stack[] = [
   {
-    category: category.Deployment,
+    category: category.deployment,
     url: 'https://vercel.com',
     repo: 'vercel/vercel',
     description: 'Develop. Preview. Ship.',
@@ -11,7 +11,7 @@ export const DeploymentStacks: Stack[] = [
     image: 'vercel.png',
   },
   {
-    category: category.Deployment,
+    category: category.deployment,
     url: 'https://netlify.com',
     repo: 'netlify',
     description:
@@ -20,7 +20,7 @@ export const DeploymentStacks: Stack[] = [
     image: 'netlify.jpeg',
   },
   {
-    category: category.Deployment,
+    category: category.deployment,
     url: 'https://pages.cloudflare.com',
     repo: '',
     description:

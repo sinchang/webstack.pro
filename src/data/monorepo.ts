@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const MonorepoStacks: Stack[] = [
   {
-    category: category.Monorepo,
+    category: category.monorepo,
     url: 'https://turborepo.org',
     repo: 'vercel/turborepo',
     description:
@@ -12,7 +12,7 @@ export const MonorepoStacks: Stack[] = [
     image: 'turborepo.png',
   },
   {
-    category: category.Monorepo,
+    category: category.monorepo,
     url: 'https://github.com/changesets/changesets',
     repo: 'changesets/changesets',
     description:

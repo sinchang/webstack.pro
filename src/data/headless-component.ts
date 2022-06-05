@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const HeadlessComponentStacks: Stack[] = [
   {
-    category: category.HeadlessComponent,
+    category: category.headlesscomponent,
     url: 'https://radix-ui.com/docs/primitives',
     repo: 'radix-ui/primitives',
     description:
@@ -12,7 +12,7 @@ export const HeadlessComponentStacks: Stack[] = [
     image: 'radix.svg',
   },
   {
-    category: category.HeadlessComponent,
+    category: category.headlesscomponent,
     url: 'https://headlessui.dev',
     repo: 'tailwindlabs/headlessui',
     description:
@@ -21,7 +21,7 @@ export const HeadlessComponentStacks: Stack[] = [
     image: 'headlessui.jpeg',
   },
   {
-    category: category.HeadlessComponent,
+    category: category.headlesscomponent,
     url: 'https://headlessui.dev',
     repo: 'adobe/react-spectrum',
     description:

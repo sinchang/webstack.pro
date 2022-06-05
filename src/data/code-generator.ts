@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const CodeGeneratorStacks: Stack[] = [
   {
-    category: category.CodeGenerator,
+    category: category.codegenerator,
     url: 'http://www.hygen.io',
     repo: 'jondot/hygen',
     description: 'The scalable code generator that saves you time.',
@@ -11,7 +11,7 @@ export const CodeGeneratorStacks: Stack[] = [
     image: 'hygen.png',
   },
   {
-    category: category.CodeGenerator,
+    category: category.codegenerator,
     url: 'https://plopjs.com',
     repo: 'plopjs/plop',
     description:

@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const TestingStacks: Stack[] = [
   {
-    category: category.Testing,
+    category: category.testing,
     url: 'https://playwright.dev',
     repo: 'microsoft/playwright',
     description: 'A framework for Web Testing and Automation.',
@@ -11,7 +11,7 @@ export const TestingStacks: Stack[] = [
     image: 'playwright.svg',
   },
   {
-    category: category.Testing,
+    category: category.testing,
     url: 'https://vitest.dev',
     repo: 'vitest-dev/vitest',
     description: 'A blazing fast unit-test framework powered by Vite.',
@@ -19,7 +19,7 @@ export const TestingStacks: Stack[] = [
     image: 'vitest.svg',
   },
   {
-    category: category.Testing,
+    category: category.testing,
     url: 'https://jestjs.io',
     repo: 'facebook/jest',
     description:
@@ -28,7 +28,7 @@ export const TestingStacks: Stack[] = [
     image: 'jest.png',
   },
   {
-    category: category.Testing,
+    category: category.testing,
     url: 'https://testing-library.com',
     repo: 'facebook/jest',
     description:

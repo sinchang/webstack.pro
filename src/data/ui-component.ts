@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const UIComponentStacks: Stack[] = [
   {
-    category: category.UIComponent,
+    category: category.uicomponent,
     url: 'https://chakra-ui.com',
     repo: 'chakra-ui/chakra-ui',
     description:
@@ -12,7 +12,7 @@ export const UIComponentStacks: Stack[] = [
     image: 'chakra_ui.svg',
   },
   {
-    category: category.UIComponent,
+    category: category.uicomponent,
     url: 'https://mui.com',
     repo: 'mui',
     description: 'The React component library you always wanted.',

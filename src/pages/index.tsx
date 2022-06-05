@@ -1,22 +1,26 @@
 import { Card } from '@components/card'
 import { Categories } from '@components/categories'
 import type { Stack } from '@custypes/stack'
-import { CategoryValue } from '@data/category'
+import { category, CategoryKey, CategoryValue } from '@data/category'
 import { stacks } from '@data/index'
 import shuffle from 'lodash.shuffle'
-import type { NextPage } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
 import { useEffect, useState } from 'react'
 
 import styles from '../styles/home.module.css'
 
-const Home: NextPage = () => {
+const Home: NextPage<{
+  stacksProps: Stack[]
+  categoryProps: CategoryKey
+}> = ({ stacksProps, categoryProps }) => {
   const [selectedCategory, setSelectedCategory] =
-    useState<CategoryValue | null>(null)
-  const [selectedStacks, setSelectedStacks] = useState<Stack[]>([])
+    useState<CategoryValue | null>(category[categoryProps])
+  const [selectedStacks, setSelectedStacks] = useState<Stack[]>(stacksProps)
 
   const handleSelect = (category: CategoryValue) => {
     if (category === selectedCategory) {
       setSelectedCategory(null)
+      setSelectedStacks(shuffle(stacks))
       return
     }
 
@@ -25,7 +29,6 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     if (!selectedCategory) {
-      setSelectedStacks(shuffle(stacks))
       return
     }
 
@@ -33,10 +36,6 @@ const Home: NextPage = () => {
       shuffle(stacks).filter((stack) => stack.category === selectedCategory)
     )
   }, [selectedCategory])
-
-  useEffect(() => {
-    setSelectedStacks(shuffle(stacks))
-  }, [])
 
   return (
     <div className={styles.container}>
@@ -68,4 +67,27 @@ const Home: NextPage = () => {
   )
 }
 
+export const getServerSideProps: GetServerSideProps = async ({
+  res,
+  query,
+}) => {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  )
+
+  let stacksProps = shuffle(stacks)
+  if (query.category) {
+    stacksProps = shuffle(stacks).filter(
+      (stack) => stack.category === category[query.category as CategoryKey]
+    )
+  }
+
+  return {
+    props: {
+      stacksProps,
+      categoryProps: query.category ?? null,
+    },
+  }
+}
 export default Home

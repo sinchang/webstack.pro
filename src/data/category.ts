@@ -1,13 +1,13 @@
 export const category = {
-  UIComponent: 'UI Component',
-  HeadlessComponent: 'Headless Component',
-  Documentation: 'Documentation',
-  Deployment: 'Deployment',
-  Monorepo: 'Monorepo',
-  Testing: 'Testing',
-  Form: 'Form',
-  Bundler: 'Bundler',
-  CodeGenerator: 'Code Generator',
+  uicomponent: 'UI Component',
+  headlesscomponent: 'Headless Component',
+  documentation: 'Documentation',
+  deployment: 'Deployment',
+  monorepo: 'Monorepo',
+  testing: 'Testing',
+  form: 'Form',
+  bundler: 'Bundler',
+  codegenerator: 'Code Generator',
 } as const
 
 export type CategoryKey = keyof typeof category

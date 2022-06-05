@@ -3,7 +3,7 @@ import { Stack } from 'types/stack'
 
 export const DocumentationStacks: Stack[] = [
   {
-    category: category.Documentation,
+    category: category.documentation,
     url: 'https://docusaurus.io',
     repo: 'facebook/docusaurus',
     description: 'Easy to maintain open source documentation websites.',
@@ -11,7 +11,7 @@ export const DocumentationStacks: Stack[] = [
     image: 'docusaurus.svg',
   },
   {
-    category: category.Documentation,
+    category: category.documentation,
     url: 'https://docsify.js.org',
     repo: 'docsifyjs/docsify',
     description: 'A magical documentation site generator.',
@@ -19,7 +19,7 @@ export const DocumentationStacks: Stack[] = [
     image: 'docsify.svg',
   },
   {
-    category: category.Documentation,
+    category: category.documentation,
     url: 'https://markdoc.io',
     repo: 'markdoc/markdoc',
     description: 'a powerful, flexible, Markdown-based authoring framework',
