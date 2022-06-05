@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@happykit/analytics": "^1.0.1",
     "@radix-ui/react-icons": "1.1.1",
     "classnames": "^2.3.1",
     "lodash.shuffle": "4.2.0",
