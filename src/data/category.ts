@@ -7,6 +7,7 @@ export const category = {
   Testing: 'Testing',
   Form: 'Form',
   Bundler: 'Bundler',
+  CodeGenerator: 'Code Generator',
 } as const
 
 export type CategoryKey = keyof typeof category
