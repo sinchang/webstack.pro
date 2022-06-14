@@ -8,6 +8,8 @@ export const category = {
   form: 'Form',
   bundler: 'Bundler',
   codegenerator: 'Code Generator',
+  statemanagement: 'State Management',
+  datafetching: 'Data Fetching',
 } as const
 
 export type CategoryKey = keyof typeof category
