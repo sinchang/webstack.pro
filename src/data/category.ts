@@ -10,6 +10,7 @@ export const category = {
   codegenerator: 'Code Generator',
   statemanagement: 'State Management',
   datafetching: 'Data Fetching',
+  date: 'Date',
 } as const
 
 export type CategoryKey = keyof typeof category

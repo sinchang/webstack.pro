@@ -1,6 +1,7 @@
 import { BundlerStacks } from './bundler'
 import { CodeGeneratorStacks } from './code-generator'
 import { DataFetchingStacks } from './data-fetching'
+import { DateStacks } from './date'
 import { DeploymentStacks } from './deployment'
 import { DocumentationStacks } from './documentation'
 import { FormStacks } from './form'
@@ -22,4 +23,5 @@ export const stacks = [
   ...CodeGeneratorStacks,
   ...DataFetchingStacks,
   ...StateManagementStacks,
+  ...DateStacks,
 ]
