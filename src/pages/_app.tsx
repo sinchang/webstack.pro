@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import { Footer } from '@components/footer'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import Script from 'next/script'
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
@@ -23,6 +24,11 @@ export default function App(props: AppProps) {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Script
+        data-website-id='78f25f72-0ce1-4af8-8803-54fa847b2b51'
+        src='https://umami-production-af5b.up.railway.app/umami.js'
+        strategy='afterInteractive'
+      />
       <Component {...pageProps} />
       <Footer />
     </>
