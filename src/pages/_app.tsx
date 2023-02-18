@@ -1,13 +1,11 @@
 import '../styles/globals.css'
 
 import { Footer } from '@components/footer'
-import { useAnalytics } from '@happykit/analytics'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props
-  useAnalytics({ publicKey: 'analytics_pub_d72ac0cf4c' })
 
   return (
     <>
