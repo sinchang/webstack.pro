@@ -10,6 +10,7 @@ import { MonorepoStacks } from './monorepo'
 import { StateManagementStacks } from './state-management'
 import { TestingStacks } from './testing'
 import { UIComponentStacks } from './ui-component'
+import { CarouselStacks } from './carousel'
 
 export const stacks = [
   ...DocumentationStacks,
@@ -24,4 +25,5 @@ export const stacks = [
   ...DataFetchingStacks,
   ...StateManagementStacks,
   ...DateStacks,
+  ...CarouselStacks,
 ]
