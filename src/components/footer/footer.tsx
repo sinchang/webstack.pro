@@ -3,7 +3,7 @@ import styles from './footer.module.css'
 export const Footer = () => {
   return (
     <div className={styles.footer}>
-      <span>&copy; 2022 </span>
+      <span>&copy; 2022 ~ present </span>
       <a href='https://github.com/sinchang/webstack.pro'>Webstack.Pro </a>
     </div>
   )
