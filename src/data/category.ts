@@ -11,6 +11,7 @@ export const category = {
   statemanagement: 'State Management',
   datafetching: 'Data Fetching',
   date: 'Date',
+  carousel: 'Carousel',
 } as const
 
 export type CategoryKey = keyof typeof category
